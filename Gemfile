@@ -1,18 +1,19 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails',        '4.2.0'
+gem 'rails',          '4.2.0'
 
-gem 'sqlite3',      '1.3.10'  # Use sqlite3 as the database for Active Record
-gem 'sass-rails',   '5.0.3'   # Use SCSS for stylesheets
-gem 'uglifier',     '2.7.1'   # Use Uglifier as compressor for JavaScript assets
-gem 'coffee-rails', '4.1.0'   # Use CoffeeScript for .coffee assets and views
-gem 'jquery-rails', '4.0.3'   # Use jquery as the JavaScript library
-gem 'turbolinks',   '2.5.3'   # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'jbuilder',     '2.2.13'  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'sdoc',         '0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
-gem 'zeus',         '0.15.4'
-gem 'slim-rails',   '3.0.1'
+gem 'sqlite3',        '1.3.10'  # Use sqlite3 as the database for Active Record
+gem 'sass-rails',     '5.0.3'   # Use SCSS for stylesheets
+gem 'uglifier',       '2.7.1'   # Use Uglifier as compressor for JavaScript assets
+gem 'coffee-rails',   '4.1.0'   # Use CoffeeScript for .coffee assets and views
+gem 'jquery-rails',   '4.0.3'   # Use jquery as the JavaScript library
+gem 'turbolinks',     '2.5.3'   # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'jbuilder',       '2.2.13'  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'sdoc',           '0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
+gem 'zeus',           '0.15.4'
+gem 'slim-rails',     '3.0.1'
+gem 'bootstrap-sass', '3.3.4.1'
 
 group :development, :test do
   gem 'byebug',       '4.0.5' # Call 'byebug' anywhere in the code to stop execution and get a debugger console
