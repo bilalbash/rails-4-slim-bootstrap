@@ -1,0 +1,59 @@
+div class="row"
+  div class="col-sm-6"
+    div class="panel panel-default"
+      div#error-messages class="panel-body"
+        h2 Register by email
+
+        form role="form" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email" id="registerForm"
+          fieldset
+            div class="form-group"
+              label email
+              input type="email" name="email" required="required" class="form-control email ng-valid-email"
+
+            div class="form-group"
+              label password
+              input type="password" name="password" required="required" class="form-control password ng-pristine"
+
+            div class="form-group"
+              label password confirmation
+              input type="password" name="password_confirmation" required="required" class="form-control password_confirmation"
+
+            /div class="form-group"
+            /  label nickname (optional)
+            /  input type="text" name="nickname" ng-model="registrationForm.nickname" class="form-control ng-pristine ng-untouched ng-valid"
+            /  p class="help-block"
+            /    | This value can also be used for authentication.
+                /See
+                /a href="https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address#tell-devise-to-use-username-in-the-authentication_keys" here
+                /| for more info.
+
+            /div class="form-group"
+            /  label favorite color (optional)
+            /  input type="text" name="favorite_color" ng-model="registrationForm.favorite_color" class="form-control ng-pristine ng-untouched ng-valid"
+
+            button id="reg-submit" type="submit" class="btn btn-primary btn-lg" Register
+
+  div class="col-sm-6"
+    div class="panel panel-default"
+      div#login-error-messages class="panel-body"
+        h2 Sign in by email
+        form#login-form ng-submit="submitLogin(loginForm)" role="form" ng-init="loginForm = {}" class="ng-pristine ng-valid-email ng-invalid ng-invalid-required"
+          fieldset ng-disabled="user.signedIn"
+            div class="form-group"
+              label email
+              input type="email" name="email" class="email form-control"
+
+            /div class="form-group"
+            /  label nickname
+            /  input type="text" name="nickname" ng-model="loginForm.nickname" class="form-control ng-pristine ng-untouched ng-valid"
+            /  p class="help-block"
+            /    | Users can use alternate authentication keys.
+            /    /See
+                /a href="https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address#tell-devise-to-use-username-in-the-authentication_keys" here
+                /| for more info.
+
+            div class="form-group"
+              label password
+              input type="password" name="password" required="required" class="password form-control"
+
+            button#login-button type="submit" class="btn btn-primary btn-lg" Sign in

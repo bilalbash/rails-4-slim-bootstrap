@@ -14,6 +14,7 @@ gem 'sdoc',           '0.4.1', group: :doc # bundle exec rake doc:rails generate
 gem 'zeus',           '0.15.4'
 gem 'slim-rails',     '3.0.1'
 gem 'bootstrap-sass', '3.3.4.1'
+gem 'jquery-fileupload-rails'
 
 group :development, :test do
   gem 'byebug',       '4.0.5' # Call 'byebug' anywhere in the code to stop execution and get a debugger console

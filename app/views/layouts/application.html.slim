@@ -5,23 +5,11 @@ html
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+
   body#home data-spy="scroll" data-target="#navbar-welcome"
     = render 'layouts/navbar'
 
     .container
       .row
-        .col-md-10
+        .col-md-12
           = yield
-        .col-md-2
-          div#navbar-welcome data-spy="affix"
-            ul.nav.nav-pills.nav-stacked
-              li role="presentation" class="active"
-                a href="#home" Home
-              li role="presentation"
-                a href="#about" About
-              li role="presentation"
-                a href="#contact" Messages
-              li role="presentation"
-                a href="#academics" Academics
-            h4.text-danger affix.js
-
